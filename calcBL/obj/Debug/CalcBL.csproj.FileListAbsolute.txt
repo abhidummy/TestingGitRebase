@@ -1,0 +1,8 @@
+C:\Users\Abhijit\Documents\Visual Studio 2010\Projects\TestingGitRebase\CalcBL\bin\Debug\CalcBL.dll
+C:\Users\Abhijit\Documents\Visual Studio 2010\Projects\TestingGitRebase\CalcBL\bin\Debug\CalcBL.pdb
+C:\Users\Abhijit\Documents\Visual Studio 2010\Projects\TestingGitRebase\CalcBL\obj\Debug\CalcBL.dll
+C:\Users\Abhijit\Documents\Visual Studio 2010\Projects\TestingGitRebase\CalcBL\obj\Debug\CalcBL.pdb
+D:\Development\CSharp_P\CalcBL\bin\Debug\CalcBL.dll
+D:\Development\CSharp_P\CalcBL\bin\Debug\CalcBL.pdb
+D:\Development\CSharp_P\CalcBL\obj\Debug\CalcBL.dll
+D:\Development\CSharp_P\CalcBL\obj\Debug\CalcBL.pdb
