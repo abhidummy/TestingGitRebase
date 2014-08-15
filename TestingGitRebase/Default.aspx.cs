@@ -24,4 +24,8 @@ public partial class _Default : System.Web.UI.Page
     {
         lblResult.Text = "";
     }
+    protected void btnMultiply_Click(object sender, EventArgs e)
+    {
+        lblResult.Text = SimpleFunctions.Multiply(Convert.ToInt32(txtFirst.Text), Convert.ToInt32(txtSecond.Text)).ToString();
+    }
 }

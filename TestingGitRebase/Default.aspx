@@ -45,7 +45,8 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button runat="server" ID="btnMultiply" Text="*"/>
+                    <asp:Button runat="server" ID="btnMultiply" Text="*" 
+                        onclick="btnMultiply_Click"/>
                 </td>
                 <td>
                     <asp:Button runat="server" ID="btnDivide" Text="/" />

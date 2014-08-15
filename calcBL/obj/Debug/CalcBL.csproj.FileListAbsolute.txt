@@ -6,3 +6,7 @@ D:\Development\CSharp_P\CalcBL\bin\Debug\CalcBL.dll
 D:\Development\CSharp_P\CalcBL\bin\Debug\CalcBL.pdb
 D:\Development\CSharp_P\CalcBL\obj\Debug\CalcBL.dll
 D:\Development\CSharp_P\CalcBL\obj\Debug\CalcBL.pdb
+D:\Development\CSharp_P\Stage\calcBL\bin\Debug\CalcBL.dll
+D:\Development\CSharp_P\Stage\calcBL\bin\Debug\CalcBL.pdb
+D:\Development\CSharp_P\Stage\calcBL\obj\Debug\CalcBL.dll
+D:\Development\CSharp_P\Stage\calcBL\obj\Debug\CalcBL.pdb
