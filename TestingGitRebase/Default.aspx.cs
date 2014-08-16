@@ -23,9 +23,23 @@ public partial class _Default : System.Web.UI.Page
     protected void btnClear_Click(object sender, EventArgs e)
     {
         lblResult.Text = "";
+        txtFirst.Text = "";
+        txtSecond.Text = "";
     }
     protected void btnMultiply_Click(object sender, EventArgs e)
     {
         lblResult.Text = SimpleFunctions.Multiply(Convert.ToInt32(txtFirst.Text), Convert.ToInt32(txtSecond.Text)).ToString();
+    }
+
+    protected void btnDivide_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            lblResult.Text = SimpleFunctions.Divide(Convert.ToInt32(txtFirst.Text), Convert.ToInt32(txtSecond.Text)).ToString();
+        }
+        catch (DivideByZeroException ex)
+        {
+            lblResult.Text = ex.Message;
+        }        
     }
 }

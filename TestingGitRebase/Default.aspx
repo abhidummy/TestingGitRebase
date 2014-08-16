@@ -49,7 +49,7 @@
                         onclick="btnMultiply_Click"/>
                 </td>
                 <td>
-                    <asp:Button runat="server" ID="btnDivide" Text="/" />
+                    <asp:Button runat="server" ID="btnDivide" Text="/" onclick="btnDivide_Click" />
                 </td>
             </tr>
             <tr>
@@ -67,7 +67,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <asp:Label ID="lblResult" runat="server"></asp:Label>
+                    <asp:Label ID="lblResult" runat="server" ></asp:Label>
                 </td>
             </tr>
         </table>
