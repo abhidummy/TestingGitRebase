@@ -57,7 +57,7 @@
                     <asp:Button runat="server" ID="btnPower" Text="^" onclick="btnPower_Click"/>
                 </td>
                 <td>
-                    <asp:Button runat="server" ID="btnRoot" Text="%" />
+                    <asp:Button runat="server" ID="btnRoot" Text="%" onclick="btnRoot_Click" />
                 </td>
             </tr>
             <tr>
