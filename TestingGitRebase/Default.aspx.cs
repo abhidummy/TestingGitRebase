@@ -28,4 +28,12 @@ public partial class _Default : System.Web.UI.Page
     {
         lblResult.Text = SimpleFunctions.Multiply(Convert.ToInt32(txtFirst.Text), Convert.ToInt32(txtSecond.Text)).ToString();
     }
+    protected void btnPower_Click(object sender, EventArgs e)
+    {
+        lblResult.Text = SimpleFunctions.Power(Convert.ToInt32(txtFirst.Text), Convert.ToInt32(txtSecond.Text)).ToString();
+    }
+    protected void btnDivide_Click(object sender, EventArgs e)
+    {
+        lblResult.Text = SimpleFunctions.Divide(Convert.ToInt32(txtFirst.Text), Convert.ToInt32(txtSecond.Text)).ToString();
+    }
 }

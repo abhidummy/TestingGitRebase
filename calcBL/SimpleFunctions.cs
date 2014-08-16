@@ -23,5 +23,9 @@ namespace MyNamespace.CalcBL
         {
             return num1 / num2;
         }
+        public static double Power(int num1, int num2)
+        {
+            return Math.Pow(Convert.ToDouble(num1), Convert.ToDouble(num2));
+        }
     }
 }
