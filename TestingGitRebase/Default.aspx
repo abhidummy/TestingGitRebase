@@ -4,65 +4,57 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Home page</title>
-    <style type="text/css">
-        td
-        {
-            padding: 5px 5px 10px 10px;
-            text-align:center;
-            /*
-            margin: 5 5 10 10;
-            */
-        }
-    </style>
+    <link href="Contents/Stylesheet.css" type="text/css" rel="Stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
         <h1>
-            This is a calculator.</h1>
-        <table id="MainTable">
+            Calculator</h1>
+            <hr />
+        <table id="Maintable">
             <tr>
                 <td colspan="2">
-                    <asp:Label runat="server" Text="Enter your numbers below" ID="lblInput"></asp:Label><br />
+                    <asp:Label runat="server" style="font-weight:bold" Text="Enter numbers to calculate" ID="lblInput"></asp:Label><br />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:TextBox runat="server" ID="txtFirst" Width="50"></asp:TextBox>
+                    <asp:TextBox runat="server" ID="txtFirst" ></asp:TextBox>
                 </td>
                 <td>
-                    <asp:TextBox runat="server" ID="txtSecond" Width="50"></asp:TextBox>
+                    <asp:TextBox runat="server" ID="txtSecond"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button runat="server" ID="btnAdd" Text="+" onclick="btnAdd_Click" />
+                    <asp:Button class="clsButton" runat="server" ID="btnAdd" Text="+" onclick="btnAdd_Click" />
                 </td>
                 <td>
-                    <asp:Button runat="server" ID="btnSubtract" Text="-" 
+                    <asp:Button class="clsButton" runat="server" ID="btnSubtract" Text="-" 
                         onclick="btnSubtract_Click" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button runat="server" ID="btnMultiply" Text="*" 
+                    <asp:Button class="clsButton" runat="server" ID="btnMultiply" Text="*" 
                         onclick="btnMultiply_Click"/>
                 </td>
                 <td>
-                    <asp:Button runat="server" ID="btnDivide" Text="/" onclick="btnDivide_Click" />
+                    <asp:Button class="clsButton" runat="server" ID="btnDivide" Text="/" onclick="btnDivide_Click" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button runat="server" ID="btnPower" Text="^" onclick="btnPower_Click"/>
+                    <asp:Button class="clsButton" runat="server" ID="btnPower" Text="^" onclick="btnPower_Click"/>
                 </td>
                 <td>
-                    <asp:Button runat="server" ID="btnRoot" Text="%" onclick="btnRoot_Click" />
+                    <asp:Button class="clsButton" runat="server" ID="btnRoot" Text="%" onclick="btnRoot_Click" />
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <asp:Button ID="btnClear" runat="server" Width="100"  Text="Clear" onclick="btnClear_Click"></asp:Button>
+                    <asp:Button ID="btnClear" class="clsButton" runat="server" Text="Clear" onclick="btnClear_Click"></asp:Button>
                 </td>
             </tr>
             <tr>

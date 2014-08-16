@@ -1,0 +1,32 @@
+﻿body 
+{
+    background-color:ThreeDFace;
+}
+h1
+{
+    text-align:center;
+    color:Navy;
+}
+
+td
+{
+    padding: 1px 1px 1px 1px;
+    text-align:center;
+    /*
+    margin: 5 5 10 10;
+    */
+}
+#Maintable
+{
+    border:2px dotted Navy;    
+    margin-left:40%;
+}
+.clsButton
+{
+    color:Blue;   
+    width:100%;
+}
+.clsInputTxtBox
+{
+    /*width:150px;*/
+}
