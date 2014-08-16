@@ -28,33 +28,33 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button class="clsButton" runat="server" ID="btnAdd" Text="+" onclick="btnAdd_Click" />
+                    <asp:Button CssClass="clsButton" runat="server" ID="btnAdd" Text="+" onclick="btnAdd_Click" />
                 </td>
                 <td>
-                    <asp:Button class="clsButton" runat="server" ID="btnSubtract" Text="-" 
+                    <asp:Button CssClass="clsButton" runat="server" ID="btnSubtract" Text="-" 
                         onclick="btnSubtract_Click" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button class="clsButton" runat="server" ID="btnMultiply" Text="*" 
+                    <asp:Button CssClass="clsButton" runat="server" ID="btnMultiply" Text="*" 
                         onclick="btnMultiply_Click"/>
                 </td>
                 <td>
-                    <asp:Button class="clsButton" runat="server" ID="btnDivide" Text="/" onclick="btnDivide_Click" />
+                    <asp:Button CssClass="clsButton" runat="server" ID="btnDivide" Text="/" onclick="btnDivide_Click" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button class="clsButton" runat="server" ID="btnPower" Text="^" onclick="btnPower_Click"/>
+                    <asp:Button CssClass="clsButton" runat="server" ID="btnPower" Text="^" onclick="btnPower_Click"/>
                 </td>
                 <td>
-                    <asp:Button class="clsButton" runat="server" ID="btnRoot" Text="%" onclick="btnRoot_Click" />
+                    <asp:Button CssClass="clsButton" runat="server" ID="btnRoot" Text="%" onclick="btnRoot_Click" />
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <asp:Button ID="btnClear" class="clsButton" runat="server" Text="Clear" onclick="btnClear_Click"></asp:Button>
+                    <asp:Button ID="btnClear" CssClass="clsButton" runat="server" Text="Clear" onclick="btnClear_Click"></asp:Button>
                 </td>
             </tr>
             <tr>
@@ -63,6 +63,9 @@
                 </td>
             </tr>
         </table>
+    </div>
+    <div>
+        <asp:HyperLink runat="server" NavigateUrl="~/Advertisements.aspx" Text="Advertisements"></asp:HyperLink>
     </div>
     </form>
 </body>
