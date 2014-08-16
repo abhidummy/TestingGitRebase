@@ -10,7 +10,7 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        btnRoot.Text = "\u221A";
     }
     protected void btnAdd_Click(object sender, EventArgs e)
     {
@@ -41,5 +41,9 @@ public partial class _Default : System.Web.UI.Page
         {
             lblResult.Text = ex.Message;
         }        
+    }
+    protected void btnRoot_Click(object sender, EventArgs e)
+    {
+        lblResult.Text = SimpleFunctions.Root(Convert.ToDouble(txtFirst.Text), Convert.ToDouble(txtSecond.Text)).ToString();
     }
 }

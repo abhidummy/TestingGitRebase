@@ -27,5 +27,9 @@ namespace MyNamespace.CalcBL
         {
             return Math.Pow(Convert.ToDouble(num1), Convert.ToDouble(num2));
         }
+        public static double Root(double num1, double num2)
+        {
+            return Math.Pow(num1, 1.0 / num2);
+        }
     }
 }
