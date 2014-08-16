@@ -50,4 +50,12 @@ public partial class _Default : System.Web.UI.Page
     {
         lblResult.Text = SimpleFunctions.Power(Convert.ToInt32(txtFirst.Text), Convert.ToInt32(txtSecond.Text)).ToString();
     }
+    protected void btnSin_Click(object sender, EventArgs e)
+    {
+        lblResult.Text = ComplexFunctions.ReturnSin(Convert.ToDouble(txtFirst.Text)).ToString();
+    }
+    protected void btnCos_Click(object sender, EventArgs e)
+    {
+        lblResult.Text = ComplexFunctions.ReturnCos(Convert.ToDouble(txtFirst.Text)).ToString();
+    }
 }

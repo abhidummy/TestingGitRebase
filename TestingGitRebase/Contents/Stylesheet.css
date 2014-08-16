@@ -30,3 +30,15 @@ td
 {
     /*width:150px;*/
 }
+.clsHideRows
+{
+    height:0px;
+    display:none;
+    /*border-collapse:collapse;*/
+}
+.clsShowRows
+{
+    height:auto;
+    /*display:inline-table;
+    border-collapse:separate;*/
+}
