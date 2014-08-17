@@ -5,12 +5,14 @@
 <head runat="server">
     <title>Home page</title>
     <link href="Contents/Stylesheet.css" type="text/css" rel="Stylesheet" />
+    <script type="text/javascript" src="Contents/Scripts/HomePage.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
         <h1>
-            Calculator</h1>
+            Calculator
+        </h1>
         <hr />
         <table id="Maintable">
             <tr>
@@ -22,12 +24,15 @@
             <tr>
                 <td>
                     <asp:TextBox runat="server" ID="txtFirst"></asp:TextBox>
-                    <asp:RegularExpressionValidator display="None" ValidationExpression="^[0-9]*\.?[0-9]+$" ID="REValidator1" runat="server" ErrorMessage="Enter numeric values" ControlToValidate="txtFirst"></asp:RegularExpressionValidator>
-                    <asp:RequiredFieldValidator ID="RFValidator1" runat="server" Display="None" ErrorMessage="First number cannot be blank" EnableClientScript="true" ControlToValidate="txtFirst"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator Display="None" ValidationExpression="^[0-9]*\.?[0-9]+$"
+                        ID="REValidator1" runat="server" ErrorMessage="Enter numeric values" ControlToValidate="txtFirst"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="RFValidator1" runat="server" Display="None" ErrorMessage="First number cannot be blank"
+                        EnableClientScript="true" ControlToValidate="txtFirst"></asp:RequiredFieldValidator>
                 </td>
                 <td>
                     <asp:TextBox runat="server" ID="txtSecond"></asp:TextBox>
-                    <asp:RegularExpressionValidator display="None" ValidationExpression="^[0-9]*\.?[0-9]+$" ID="REValidator2" runat="server" ErrorMessage="Enter numeric values" ControlToValidate="txtSecond"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator Display="None" ValidationExpression="^[0-9]*\.?[0-9]+$"
+                        ID="REValidator2" runat="server" ErrorMessage="Enter numeric values" ControlToValidate="txtSecond"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -54,10 +59,25 @@
                     <asp:Button CssClass="clsButton" runat="server" ID="btnRoot" Text="%" OnClick="btnRoot_Click" />
                 </td>
             </tr>
+            <tr id="ComplexRow">
+                <!-- class="clsHideRows" -->
+                <td>
+                    <asp:Button CssClass="clsButton" runat="server" ID="btnSin" Text="Sin" OnClick="btnSin_Click" />
+                </td>
+                <td>
+                    <asp:Button CssClass="clsButton" runat="server" ID="btnCos" Text="Cos" OnClick="btnCos_Click" />
+                </td>
+            </tr>
             <tr>
-                <td colspan="2">
+                <td>
                     <asp:Button ID="btnClear" CssClass="clsButton" runat="server" Text="Clear" OnClick="btnClear_Click">
                     </asp:Button>
+                </td>
+                <td>
+                    <!-- <button id="btnToggleAdvance" class="clsButton" onclick="toggleComplex()">Show Advance</button> -->
+                    <!--<asp:Button runat="server" ID="btnToggleAdvance" CssClass="clsButton" Text="Show Advance" OnClientClick="toggleComplex(this)" />-->
+                    <input type="button" class="clsButton" id="btnToggleAdvance" value="Hide Advance"
+                        onclick="javascript:toggleComplex(this);" />
                 </td>
             </tr>
             <tr>
