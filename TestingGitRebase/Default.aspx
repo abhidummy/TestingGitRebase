@@ -87,13 +87,10 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <asp:ValidationSummary runat="server" ID="validateSummary" runat="server"></asp:ValidationSummary>
+                    <asp:ValidationSummary runat="server" ID="validateSummary"></asp:ValidationSummary>
                 </td>
             </tr>
         </table>
-    </div>
-    <div>
-        <asp:HyperLink runat="server" NavigateUrl="~/Advertisements.aspx" Text="Advertisements"></asp:HyperLink>
     </div>
     </form>
 </body>
